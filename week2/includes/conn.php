@@ -19,3 +19,9 @@ function getConn(){
 function close(){
     return $db = null;
 }
+function getContent (PDOStatement $stmt){
+
+    while ($line = $stmt->fetchObject()){
+        echo $line->title . " - " . $line->rating . " - " . $line->description."<br/>";
+    }
+}
