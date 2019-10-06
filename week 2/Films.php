@@ -5,7 +5,7 @@
  * Date: 04/10/2019
  * Time: 19:53
  */
-require_once 'conn.php';
+require_once 'includes/conn.php';
 
 $db = getConn();
 
@@ -16,3 +16,4 @@ $stmt = $db->query($sql);
 while ($line = $stmt->fetchObject()){
     echo $line->title . " " . $line->rating . " " . $line->description."<br/>";
 }
+$db = close();
