@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/user/public_html/
-    - /bin/cp week2/ $deploypath
+    - /bin/cp week2/Films.php $deploypath
+    - /bin/cp week2/includes/conn.php $deploypath
