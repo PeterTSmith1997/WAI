@@ -14,6 +14,6 @@ $sql = "SELECT title, rating, description FROM nfc_film";
 $stmt = $db->query($sql);
 
 while ($line = $stmt->fetchObject()){
-    echo $line->title . " " . $line->rating . " " . $line->description."<br/>";
+    echo $line->title . " - " . $line->rating . " - " . $line->description."<br/>";
 }
 $db = close();
